@@ -234,3 +234,61 @@ footer {
     animation: fadeOut 0.3s forwards; 
 }
 
+@media (max-width: 768px) {
+    header {
+        justify-content: left;
+    }
+
+    header img {
+        max-width: 220px; 
+    }
+
+    .btnLogin, .btnRegister{
+        font-size: 1rem;
+    }
+
+    
+    
+    .themeSwitch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+    }
+    
+    
+    
+    .sliderTema {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 30px;
+    }
+    
+    
+    .sliderTema:before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        border-radius: 30px;
+        background-color: white;
+        transition: 0.4s;
+    }
+    
+}
+@media (max-width: 480px) {
+    header {
+        padding: 0.3rem; 
+    }
+
+    header img {
+        margin-top: 1.5rem;
+        max-width: 100px !important; 
+    }
+}
